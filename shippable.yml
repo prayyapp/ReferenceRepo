@@ -1,0 +1,26 @@
+# language setting
+language: node_js
+
+# Docker image caching
+# See http://blog.shippable.com/faster-builds-with-cached-containers
+cache: true
+
+# Disable noise
+notifications:
+   email: false
+
+# no node version specifier
+# See https://github.com/Shippable/support/issues/1352
+
+before_install:
+# Install node manually apart from shippable
+  - mkdir -p ~/.nvm/versions
+  - shippable_retry source ~/.nvm/nvm.sh && nvm install 0.12.7
+
+#install the required dependencies
+install:
+  - shippable_retry npm install
+
+script:
+  - npm test
+  - mv shippable/codecoverage/*/coverage.xml shippable/codecoverage
