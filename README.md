@@ -8,10 +8,3 @@ This file contains a feed of blasters and their most recent blasts.
 Use the following URL in your application to read data from the Blast feed:
 
 https://raw.githubusercontent.com/CSCO-DevOps-Bootcamp/ReferenceRepo/datafeeds/blastfeed.json
-
-
-### File adfeed.json
-This file contains a feed of ads from your advertising partners.
-Use the following URL in your application to read data from the ad feed:
-
-https://raw.githubusercontent.com/CSCO-DevOps-Bootcamp/ReferenceRepo/datafeeds/adfeed.json
