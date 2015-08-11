@@ -1,23 +1,83 @@
 {
   "records": [{
-    "Portrait": "https://randomuser.me/api/portraits/med/men/20.jpg",
-    "Joined": "2015-08-07T22:42:00Z",
-    "Recent Blast": "Trying out a new social media app today. Hello?"
+    "Username": "bearhugs",
+    "First": "Melynda",
+    "Last": "Ochoa",
+    "Sex": "F",
+    "Portrait": "https://randomuser.me/api/portraits/med/women/22.jpg",
+    "Joined": "2015-28-08T14:35:00Z",
+    "Recent Blast": "Food trucks are great! Can't wait for flying food drones!"
   }, {
-    "Portrait": "https://randomuser.me/api/portraits/med/men/8.jpg",
-    "Joined": "2015-02-03T18:36:00Z",
-    "Recent Blast": "Anyone out there?"
+    "Username": "Black Sheep",
+    "First": "Ellis",
+    "Last": "Quon",
+    "Sex": "M",
+    "Portrait": "https://randomuser.me/api/portraits/med/men/10.jpg",
+    "Joined": "2015-23-03T19:12:00Z",
+    "Recent Blast": "When is the next New Years Eve?"
   }, {
+    "Username": "Romeo",
+    "First": "Mitch",
+    "Last": "Stockard",
+    "Sex": "M",
+    "Portrait": "https://randomuser.me/api/portraits/med/men/9.jpg",
+    "Joined": "2015-12-03T18:48:00Z",
+    "Recent Blast": "This place is starting to get weird."
+  }, {
+    "Username": "Angel Doll",
+    "First": "Lidia",
+    "Last": "Stanwood",
+    "Sex": "F",
+    "Portrait": "https://randomuser.me/api/portraits/med/women/4.jpg",
+    "Joined": "2015-28-01T03:47:00Z",
+    "Recent Blast": "On a scale from one to ten what is your favourite colour of the alphabet?"
+  }, {
+    "Username": "Bad Ass",
+    "First": "Harrison",
+    "Last": "Criger",
+    "Sex": "M",
+    "Portrait": "https://randomuser.me/api/portraits/med/men/6.jpg",
+    "Joined": "2015-10-02T17:53:00Z",
+    "Recent Blast": "Chuck Norris on a Sheen of Winning"
+  }, {
+    "Username": "NoisYBoY",
+    "First": "Alden",
+    "Last": "Lugo",
+    "Sex": "M",
+    "Portrait": "https://randomuser.me/api/portraits/med/men/17.jpg",
+    "Joined": "2015-10-06T22:03:00Z",
+    "Recent Blast": "I think this is the random part of the Internet."
+  }, {
+    "Username": "Black Hawk",
+    "First": "Lee",
+    "Last": "Robinett",
+    "Sex": "M",
     "Portrait": "https://randomuser.me/api/portraits/med/men/16.jpg",
     "Joined": "2015-05-05T21:42:00Z",
-    "Recent Blast": "My cat just typed this blast!"
+    "Recent Blast": "That's where I saw the leprechaun"
   }, {
-    "Portrait": "https://randomuser.me/api/portraits/med/men/0.jpg",
-    "Joined": "2015-07-01T15:11:00Z",
-    "Recent Blast": "Finally! A social media app without blabbering idiots."
+    "Username": "Battledoom",
+    "First": "Donovan",
+    "Last": "Leist",
+    "Sex": "M",
+    "Portrait": "https://randomuser.me/api/portraits/med/men/18.jpg",
+    "Joined": "2015-19-06T22:23:00Z",
+    "Recent Blast": "That's unpossible"
   }, {
-    "Portrait": "https://randomuser.me/api/portraits/med/women/7.jpg",
-    "Joined": "2015-28-02T05:21:00Z",
-    "Recent Blast": "I like the peace and quiet here! 8-)"
-  }]
+    "Username": "Melody",
+    "First": "Barbara",
+    "Last": "Bartol",
+    "Sex": "F",
+    "Portrait": "https://randomuser.me/api/portraits/med/women/6.jpg",
+    "Joined": "2015-10-02T05:20:00Z",
+    "Recent Blast": "Look,a distraction!"
+  }, {
+    "Username": "Crashtest",
+    "First": "Rick",
+    "Last": "Maybee",
+    "Sex": "M",
+    "Portrait": "https://randomuser.me/api/portraits/med/men/12.jpg",
+    "Joined": "2015-22-04T20:11:00Z",
+    "Recent Blast": "Invisible Terminator,BLAARGH!"
+ }]
 }
