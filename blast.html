@@ -4,7 +4,7 @@
             <img class="media-object" ng-src="{{blast.Portrait}}">
         </a>
         <div class="media-body">
-            <p class="text-right">Member since {{blast.Joined}}</p>
+            <p class="text-right">Member since {{blast.Joined | date:'longDate'}}</p>
             <p>{{blast['Recent Blast']}}</p>
         </div>
     </div>
