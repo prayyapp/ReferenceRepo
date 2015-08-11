@@ -9,6 +9,7 @@ app.controller('BlastList', ['$scope', '$http', function($scope, $http) {
 app.directive('userBlast', function() {
   return {
     restrict: 'E',
+    replace:true,
     scope: {
       blast: '='
     },
