@@ -1,35 +1,23 @@
 {
   "records": [{
-    "Username": "Kitty",
-    "First": "Angie",
-    "Last": "Ancheta",
-    "Sex": "F",
-    "Portrait": "https://randomuser.me/api/portraits/med/women/0.jpg",
-    "Joined": "2015-05-01T01:07:00Z",
-    "Recent Blast": "I am so blue I'm greener than purple."
+    "Portrait": "https://randomuser.me/api/portraits/med/men/20.jpg",
+    "Joined": "2015-08-07T22:42:00Z",
+    "Recent Blast": "Trying out a new social media app today. Hello?"
   }, {
-    "Username": "Bee",
-    "First": "Wynona",
-    "Last": "Scotti",
-    "Sex": "F",
-    "Portrait": "https://randomuser.me/api/portraits/med/women/1.jpg",
-    "Joined": "2015-06-01T01:58:00Z",
-    "Recent Blast": "I stepped on a Corn Flake, now I'm a Cereal Killer!"
+    "Portrait": "https://randomuser.me/api/portraits/med/men/8.jpg",
+    "Joined": "2015-02-03T18:36:00Z",
+    "Recent Blast": "Anyone out there?"
   }, {
-    "Username": "Bubblegum",
-    "First": "Krishna",
-    "Last": "Carreiro",
-    "Sex": "F",
-    "Portrait": "https://randomuser.me/api/portraits/med/women/2.jpg",
-    "Joined": "2015-15-01T02:41:00Z",
-    "Recent Blast": "Banana error."
+    "Portrait": "https://randomuser.me/api/portraits/med/men/16.jpg",
+    "Joined": "2015-05-05T21:42:00Z",
+    "Recent Blast": "My cat just typed this blast!"
   }, {
-    "Username": "Silly Ninja",
-    "First": "Marianela",
-    "Last": "Carruth",
-    "Sex": "F",
-    "Portrait": "https://randomuser.me/api/portraits/med/women/3.jpg",
-    "Joined": "2015-24-01T03:22:00Z",
-    "Recent Blast": "What do you think about the magical yellow unicorn?"
+    "Portrait": "https://randomuser.me/api/portraits/med/men/0.jpg",
+    "Joined": "2015-07-01T15:11:00Z",
+    "Recent Blast": "Finally! A social media app without blabbering idiots."
+  }, {
+    "Portrait": "https://randomuser.me/api/portraits/med/women/7.jpg",
+    "Joined": "2015-28-02T05:21:00Z",
+    "Recent Blast": "I like the peace and quiet here! 8-)"
   }]
 }
