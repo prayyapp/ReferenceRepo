@@ -3,7 +3,7 @@
 
 <head>
     <title>MasterBlaster</title>
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="app.css" type="text/css" />
 
@@ -21,8 +21,18 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12" ng-repeat="blast in blasts">
+            <div class="col-lg-12 text-center">
+                <i class="glyphicon glyphicon-eject up-arrow" ng-click="scroll(-1)"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12" ng-repeat="blast in visibleBlasts">
                 <user-blast blast="blast"></user-blast>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <i class="glyphicon glyphicon-eject down-arrow" ng-click="scroll(1)"></i>
             </div>
         </div>
     </div>
