@@ -1,0 +1,33 @@
+.title {
+    margin-bottom: 30px;
+}
+
+.blast .post {
+    font-size: 20px;
+}
+
+.down-arrow {
+    -webkit-transform: rotate(-180deg) scale(16, 2);
+    -moz-transform: rotate(-180deg) scale(16, 2);
+    -ms-transform: rotate(-180deg) scale(16, 2);
+    -o-transform: rotate(-180deg) scale(16, 2);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=6);
+}
+
+.up-arrow {
+    transform: scale(16, 2);
+    -webkit-transform: scale(16, 2);
+    -moz-transform: scale(16, 2);
+    -ms-transform: scale(16, 2);
+    -o-transform: scale(16, 2);
+    margin-bottom: 10px;
+}
+
+.profile {
+    max-width: 110px;
+    margin-right: 30px;
+}
+
+.profile .picture {
+    height: 70px;
+}

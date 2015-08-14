@@ -1,14 +1,14 @@
 {
     "ace": {
-        "@guessTabSize": "true",
+        "@guessTabSize": true,
         "@newLineMode": "unix",
-        "@tabSize": "4",
-        "@useSoftTabs": "true"
+        "@tabSize": 4,
+        "@useSoftTabs": true
     },
     "build": {
         "@builder": "auto",
         "@path": "/.c9/builders",
-        "@saveall": "true"
+        "@saveall": true
     },
     "find.nak": {
         "@searchLimit": 100
@@ -17,17 +17,17 @@
         "@stripws": false
     },
     "language": {
-        "@eslintrc": "true",
-        "@instanceHighlight": "true",
-        "@semi": "true",
-        "@undeclaredVars": "true",
-        "@unusedFunctionArgs": "false",
+        "@eslintrc": true,
+        "@instanceHighlight": true,
+        "@semi": true,
+        "@undeclaredVars": true,
+        "@unusedFunctionArgs": false,
         "@warnLevel": "info"
     },
     "run": {
         "@path": "/.c9/runners",
         "configs": {
-            "@inited": "true",
+            "@inited": true,
             "json()": {}
         }
     },

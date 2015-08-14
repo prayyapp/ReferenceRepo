@@ -1,0 +1,12 @@
+<div class="well blast">
+    <div class="media">
+        <div class="pull-left text-center profile" href="#">
+            <img class="media-object picture img-circle" ng-src="{{blast.Portrait}}">
+            <p class="name">{{blast.Username}}</p>
+        </div>
+        <div class="media-body">
+            <p class="text-right joined">Member since {{blast.Joined | date:'longDate'}}</p>
+            <p class="post">{{blast['Recent Blast']}}</p>
+        </div>
+    </div>
+</div>
