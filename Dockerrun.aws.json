@@ -1,0 +1,16 @@
+{
+"AWSEBDockerrunVersion": "1",
+"Image": {
+  "Name": "<IMAGE_NAME>:<TAG>",
+  "Update": "true"
+},
+"Ports": [
+  {
+    "ContainerPort": "3000"
+  }
+],
+"Authentication": {
+  "Bucket": "elasticbeanstalk-us-east-1-270717709666",
+  "Key": "<DOCKER_CONFIG>"
+}
+}
