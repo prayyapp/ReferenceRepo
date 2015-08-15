@@ -10,7 +10,9 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/blast-service.js"></script>
 </head>
 
 <body ng-controller="BlastList">
@@ -21,18 +23,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <i class="glyphicon glyphicon-eject up-arrow" ng-click="scroll(-1)"></i>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12" ng-repeat="blast in visibleBlasts">
-                <user-blast blast="blast"></user-blast>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <i class="glyphicon glyphicon-eject down-arrow" ng-click="scroll(1)"></i>
+            <div class="col-lg-12">
+                <blast-list blasts="allBlasts"></blast-list>
             </div>
         </div>
     </div>
