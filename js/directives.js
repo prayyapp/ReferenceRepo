@@ -9,6 +9,17 @@ app.directive('userBlast', function() {
   };
 });
 
+app.directive('adBlast', function() {
+  return {
+    restrict: 'E',
+    replace: true,
+    scope: {
+      ad: '='
+    },
+    templateUrl: 'ad.html'
+  };
+});
+
 app.directive('scrollArrow', function() {
   return {
     restrict: 'E',

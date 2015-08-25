@@ -2,6 +2,10 @@
     margin-bottom: 30px;
 }
 
+.footer {
+    margin-top: 50px;
+}
+
 .blast {
     max-height: 120px;
 }
@@ -19,21 +23,32 @@
     font-size: 20px;
 }
 
+.ad {
+    margin-bottom: 20px;
+    height: 120px;
+}
+
+.ad .body {
+    margin: auto;
+    width: 60%;
+}
+
 .down-arrow {
-    -webkit-transform: rotate(-180deg) scale(16, 2);
-    -moz-transform: rotate(-180deg) scale(16, 2);
-    -ms-transform: rotate(-180deg) scale(16, 2);
-    -o-transform: rotate(-180deg) scale(16, 2);
+    -webkit-transform: rotate(-180deg) scale(16, 4);
+    -moz-transform: rotate(-180deg) scale(16, 4);
+    -ms-transform: rotate(-180deg) scale(16, 4);
+    -o-transform: rotate(-180deg) scale(16, 4);
     filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=6);
+    padding-right: 1px;
 }
 
 .up-arrow {
-    transform: scale(16, 2);
-    -webkit-transform: scale(16, 2);
-    -moz-transform: scale(16, 2);
-    -ms-transform: scale(16, 2);
-    -o-transform: scale(16, 2);
-    margin-bottom: 10px;
+    transform: scale(16, 4);
+    -webkit-transform: scale(16, 4);
+    -moz-transform: scale(16, 4);
+    -ms-transform: scale(16, 4);
+    -o-transform: scale(16, 4);
+    margin-bottom: 20px;
 }
 
 .profile {
@@ -41,8 +56,20 @@
     margin-right: 30px;
 }
 
+.picture-container {
+    position: relative;
+    height: 90px;
+}
+
 .profile .picture {
     height: 70px;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
+}
+
+.inlay {
+    position: absolute;
+    bottom: 25px;
+    right: 22px;
 }

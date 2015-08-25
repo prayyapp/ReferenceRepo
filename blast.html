@@ -1,8 +1,11 @@
 <div class="well blast {{blast | blastRepClass}}">
     <div class="media">
         <div class="pull-left text-center profile" href="#">
-            <img class="media-object picture img-circle" ng-src="{{blast.Portrait}}">
+            <div class="picture-container">
+                <img class="media-object picture img-circle" ng-src="{{blast.Portrait}}">
+                <img class="inlay" ng-src="img/star-{{blast | blastPostCount}}.png" />
             <p class="name">{{blast.Username}}</p>
+            </div>
         </div>
         <div class="media-body">
             <p class="text-right joined">Member since {{blast.Joined | date:'longDate'}}</p>
