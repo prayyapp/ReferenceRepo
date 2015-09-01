@@ -4,7 +4,7 @@ app.controller('BlastList', ['$scope', '$http', 'BlastService', 'AdService', fun
   var adPeriod = 4;
   BlastService.list().success(function(blastFeed) {
     AdService.list().success(function(adFeed) {
-      $scope.allBlasts = injectAds(removeInactiveUsers(blastFeed.records), adFeed.records, adPeriod);
+      $scope.allBlasts = injectAds(removeInactiveUsers(randomizeArray(blastFeed.records)), adFeed.records, adPeriod);
     });
   });
 
@@ -12,7 +12,7 @@ app.controller('BlastList', ['$scope', '$http', 'BlastService', 'AdService', fun
     return $.grep(blasts, function(blast, idx) {
       return blast.Active == 'TRUE';
     });
-  }
+  };
 
   var injectAds = function(blasts, ads, period) {
     var injected = [];
@@ -27,7 +27,18 @@ app.controller('BlastList', ['$scope', '$http', 'BlastService', 'AdService', fun
       }
     });
     return injected;
-  }
+  };
+
+  var randomizeArray = function(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
+  };
+  
 }]);
 
 app.filter('blastRepClass', function() {
