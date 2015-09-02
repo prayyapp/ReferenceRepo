@@ -12,10 +12,10 @@ app.controller('BlastList', ['$scope', '$http', 'BlastService', 'AdService', 'Ge
   $scope.pins = [];
   $scope.map = {
     center: {
-      latitude: 40,
+      latitude: 30,
       longitude: -99
     },
-    zoom: 1
+    zoom: 2
   };
 
   $scope.loadPins = function(blasts) {
