@@ -1,12 +1,64 @@
-var app = angular.module('MasterBlaster', []);
+var app = angular.module('MasterBlaster', ['uiGmapgoogle-maps', 'ngStorage']);
 
-app.controller('BlastList', ['$scope', '$http', 'BlastService', 'AdService', function($scope, $http, BlastService, AdService) {
+app.controller('BlastList', ['$scope', '$http', 'BlastService', 'AdService', 'GeoService', '$timeout', function($scope, $http, BlastService, AdService, GeoService, $timeout) {
   var adPeriod = 4;
   BlastService.list().success(function(blastFeed) {
     AdService.list().success(function(adFeed) {
       $scope.allBlasts = injectAds(removeInactiveUsers(randomizeArray(blastFeed.records)), adFeed.records, adPeriod);
+      $scope.loadPins(blastFeed.records);
     });
   });
+
+  $scope.pins = [];
+  $scope.map = {
+    center: {
+      latitude: 40,
+      longitude: -99
+    },
+    zoom: 1
+  };
+
+  $scope.loadPins = function(blasts) {
+    var locations = {};
+    $.each(blasts, function(i, v) {
+      var loc = v.City + ', ' + v.Country;
+      if (!locations[loc]) {
+        locations[loc] = 0
+      }
+      locations[loc] += 1
+    });
+
+    function fetchLocations() {
+      //Google Map loads asynchronously, need to wait for it to load
+      if (google.maps.Size == undefined) {
+        $timeout(fetchLocations, 10);
+        return;
+      }
+
+      $.each(locations, function(loc, count) {
+        GeoService.coordinatesForCity(loc).then(function(data) {
+          $scope.pins.push({
+            title: loc,
+            id: loc,
+            latitude: data.lat,
+            longitude: data.lng,
+            icon: {
+              url: 'http://www.clker.com/cliparts/U/8/J/z/5/D/google-maps-icon-blue-hi.png',
+              scaledSize: new google.maps.Size(18, 28),
+            },
+            opts: {
+              labelContent: '' + count,
+              labelAnchor: "3 24",
+              labelClass: 'labelClass',
+              labelInBackground: true
+            },
+          });
+        });
+      });
+    };
+    fetchLocations();
+
+  };
 
   var removeInactiveUsers = function(blasts) {
     return $.grep(blasts, function(blast, idx) {
@@ -38,7 +90,7 @@ app.controller('BlastList', ['$scope', '$http', 'BlastService', 'AdService', fun
     }
     return array;
   };
-  
+
 }]);
 
 app.filter('blastRepClass', function() {
