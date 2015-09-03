@@ -4,7 +4,7 @@ app.controller('BlastList', ['$scope', '$http', 'BlastService', 'AdService', 'Ge
   var adPeriod = 4;
   BlastService.list().success(function(blastFeed) {
     AdService.list().success(function(adFeed) {
-      $scope.allBlasts = injectAds(removeInactiveUsers(randomizeArray(blastFeed.records)), adFeed.records, adPeriod);
+      $scope.allBlasts = injectAds(removeInactiveUsers(randomizeArray(blastFeed.records)), randomizeArray(adFeed.records), adPeriod);
       $scope.loadPins(blastFeed.records);
     });
   });
