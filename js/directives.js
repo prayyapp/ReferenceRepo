@@ -56,7 +56,7 @@ app.directive('blastList', function() {
         $.merge(scope.visibleBlasts, scope.blasts.slice(currentIndex, currentIndex + displayLength));
       };
 
-      scope.$watch('blasts', function(oldValue, newValue) {
+      scope.$watch('blasts', function(newValue, oldValue) {
         if (newValue) {
           scope.scroll(0);
         }

@@ -1,3 +1,9 @@
+.container {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 42px;
+}
+
 .title {
     margin-bottom: 30px;
 }
@@ -30,7 +36,7 @@
 
 .ad .body {
     margin: auto;
-    width: 60%;
+    width: 85%;
 }
 
 .down-arrow {
@@ -72,4 +78,37 @@
     position: absolute;
     bottom: 25px;
     right: 22px;
+}
+
+.angular-google-map-container {
+    top: 80px;
+    min-height: 600px;
+    min-width: 400px;
+    max-width: 95%;
+}
+
+.angular-google-map,
+.angular-google-map-container {
+    position: relative;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80% !important;
+    height: 95% !important;
+}
+
+.labelClass,
+.markerLabels {
+    color: #ffffff;
+    opacity: 1 !important;
 }
