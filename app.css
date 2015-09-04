@@ -1,3 +1,9 @@
+.container {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 42px;
+}
+
 .title {
     margin-bottom: 30px;
 }
@@ -75,14 +81,30 @@
 }
 
 .angular-google-map-container {
-    height: 400px;
+    top: 80px;
+    min-height: 600px;
+    min-width: 400px;
+    max-width: 95%;
 }
 
-.angular-google-map, .angular-google-map-container{
-    top: 50px;
-    width: 800px;
-    height:600px;
+.angular-google-map,
+.angular-google-map-container {
     position: relative;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80% !important;
+    height: 95% !important;
 }
 
 .labelClass,
