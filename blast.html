@@ -1,0 +1,15 @@
+<div class="well blast {{blast | blastRepClass}}">
+    <div class="media">
+        <div class="pull-left text-center profile" href="#">
+            <div class="picture-container">
+                <img class="media-object picture img-circle" ng-src="{{blast.Portrait}}">
+                <img class="inlay" ng-src="img/star-{{blast | blastPostCount}}.png" />
+            <p class="name">{{blast.Username}}</p>
+            </div>
+        </div>
+        <div class="media-body">
+            <p class="post">{{blast['Recent Blast']}}</p>
+            <p class="text-right location">{{blast.City}}, {{blast.Country}}</p>
+        </div>
+    </div>
+</div>
