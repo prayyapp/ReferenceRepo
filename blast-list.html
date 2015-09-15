@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <scroll-arrow up ng-click="scroll(-1)"></scroll-arrow>
+    </div>
+    <div class="col-lg-12" ng-repeat="item in visibleBlasts">
+        <user-blast blast="item" ng-if="item.type == 'blast'"></user-blast>
+        <ad-blast ad="item" ng-if="item.type == 'ad'"></ad-blast>
+    </div>
+    <div class="col-lg-12 text-center">
+        <scroll-arrow down ng-click="scroll(1)"></scroll-arrow>
+    </div>
+</div>
